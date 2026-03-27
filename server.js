@@ -26,7 +26,7 @@ app.get("/products", async (req, res) => {
 });
 
 
-// ➕ ADD product
+// ➕ ADD PRODUCT
 app.post("/add-product", async (req, res) => {
   try {
     const db = getDB();
@@ -49,7 +49,8 @@ app.post("/add-product", async (req, res) => {
     });
 
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error(err); // 🔥 VERY IMPORTANT
+    res.status(500).json({ message: "Server error" });
   }
 });
 
