@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 // 🔍 Health Check (Check this in your browser first!)
 app.get("/", (req, res) => {
-  res.send("Bakestock Backend is Running! 🚀");
+  res.send("BakeStock Backend is Running! 🚀");
 });
 
 // 📦 GET ALL PRODUCTS
